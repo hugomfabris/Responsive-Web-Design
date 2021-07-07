@@ -58,14 +58,14 @@ a {
     }
 }
 
-#img {
+#image {
    margin: 0 auto;
    max-width: 60%;
    height: auto;
    display:block;
 }
 @media (max-width: 460px) {
-    #img {
+    #image {
         margin: 0;
     }
 }
