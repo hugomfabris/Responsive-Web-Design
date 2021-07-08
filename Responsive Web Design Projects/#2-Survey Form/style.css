@@ -1,0 +1,16 @@
+body {
+    font-size: 12px;
+    background-color: white;
+    text-align: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#dropdown-1 {
+    /*max-width here used provisorely*/
+    max-width: 100px;
+    align-self: center;
+}
