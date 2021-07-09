@@ -1,0 +1,114 @@
+html {
+    font-size: 12px;
+}
+body {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    background-color: rgb(237, 242, 243);
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+@media (max-width: 460px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+a {
+    color: #477ca7;
+  }
+
+  a:visited {
+    color: #74638f;
+  }
+  
+#main {
+    margin: 10px 6px;
+    background-color:#e5eaf1;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
+}
+
+#img-div {
+    background-color: rgb(237, 242, 243);
+    margin: auto 90px;
+    padding: 50px;
+}
+@media (max-width: 460px) {
+    #img-div {
+        margin: 0;
+    }
+}
+
+#image {
+   margin: 0 auto;
+   max-width: 60%;
+   height: auto;
+   display:block;
+}
+@media (max-width: 460px) {
+    #image {
+        margin: 0;
+    }
+}
+
+#img-caption {
+    font-size: 1rem;
+    margin:15px 0 5px 0;
+}
+@media (maw-width: 460px) {
+    #img-caption {  
+        margin: 15px 0 5px 0;
+    }
+}
+
+ul {
+    text-align: left;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+#tribute-info-title {
+    margin: 30px;
+    text-align: center;
+}
+
+li {
+    margin: 16px 0
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 580px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+#tom-ze {
+    text-align:end;
+    font-family: 'Yomogi', Roboto, sans-serif;
+}
+
+#quote {
+    text-align:center;
+    font-family: 'Yomogi';
+}
