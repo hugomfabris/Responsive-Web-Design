@@ -1,16 +1,44 @@
 body {
-    font-size: 12px;
-    background-color: white;
+    font-size: 15px;
+    font-family: 'Uchen', serif;
+    color: whitesmoke;
+    background-image: url(Bojack_Horseman\ \(2\).png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     text-align: center;
+    line-height: 1.7;
+    margin: 0;
 }
 
 #survey-form {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-top: 5px;
+    margin:auto 400px auto 400px;
+    text-align:start;
 }
 
 #dropdown-1 {
     /*max-width here used provisorely*/
-    max-width: 100px;
-    align-self: center;
+    max-width: 900px;
+    align-self:flex-start;
+}
+
+#title {
+    font-size: 50px;
+    color: rgb(209, 200, 183);
+    line-height: 1.1;
+}
+
+#description {
+    margin-top: 0;
+    font-size: 20px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.form-group {
+    border-radius: 10px;
 }

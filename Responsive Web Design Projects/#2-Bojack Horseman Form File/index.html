@@ -4,107 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bojack Horseman Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <title>Bojack Horseman Form</title>
+    </header>
     <h1 id="title">Bojack Horseman Form</h1>
     <p id="description">&#x1f40e Thank you for participating: Bojack would be less depressed and prouder of his life &#x1f40e</p>
-    <main id="main">
-        <form action="" id="survey-form">
-            <label id="email-label" for="name"> 
-                Name <br>
-                <input id="name" type="text">
-            </label>
-            <label id="email.label" for="email">
-                E-mail <br>
-                <input id="email" type="text">
-            </label>
-            <label id="number-label"for="number">
-                Age <br>
-                <input id="number" type="number">
-            </label>
-            <label id="dropdown-label-1" for="dropdown">
-            Which option best describes your current role? 
-            </label>
-                <select id="dropdown-1" name="current-role">
-                    <option value="Working">Working</option> 
-                    <option value="Studing">Studing</option>
-                    <option value="Other">Other</option>
-                </select>
-            Would you recommend the TV show Bojack Horseman to a Frind? 
-
-            <form action="">
-                <label for="definitly">
-                    <input id="definitly" type="radio" name="recommend">Definitly</input>
+    <div id="main" class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="email-label" for="name">
+                    Name <br>
+                    <input id="name" type="text" placeholder="Enter your name" class="form-control">
                 </label>
-                <label for="maybe">
-                    <input id="maybe" type="radio" name="recommend">Maybe</input>
+            </div>
+            <div class="form-group">
+                <label id="email.label" for="email">
+                    E-mail <br>
+                    <input id="email" type="text" placeholder="Enter your e-mail" class="form-control">
                 </label>
-                <label for="not-really">
-                    <input type="radio" id="not-really" name="recommend">Not really!</input>
+            </div>
+            <div class="form-group">
+                <label id="number-label"for="number">
+                    Age <br>
+                    <input id="number" type="number" placeholder="Enter your age" class="form-control">
                 </label>
-            </form>
-            <label for="dropdown-label-2">Which character would you be on the show? </label>
-                <p>
-                    <select id="dropdown-2" name="which-character">
-                        <option value="Bojack Horseman">Bojack Horseman</option>
-                        <option value="Todd Chavez">Todd Chavez</option>
-                        <option value="Princess Caroline">Princesa Caroline</option>
-                        <option value="Sr. Peanutbutter">Sr. Peanutbutter</option>
-                        <option value="Diane Nguyen">Diane Nguyen</option>
-                        <option value="Sarah Lynn">Sarah Lynn</option>
-                        <option value="Herb Kazzaz">Herb Kazzaz</option>
-                    </select>
+            </div>
+            <div class="form-group">
+                <p id="dropdown-label-1" for="dropdown">
+                Which option best describes your current role?
                 </p>
-            <form action="">Which characters do you like? (Check all that apply) <br>
-
-               
-                        <label for="Bojack">
-                            <input id="bojack" type="checkbox"> 
-                            Bojack
-                        </label>
-                            <br>      
-                        <label for="Todd">
-                            <input id="Todd" type="checkbox"> 
-                            Todd
-                        </label>
-                            <br>
-                        <label for="Princess Caroline">
-                            <input id="princess-caroline" type="checkbox"> 
-                            Princess Caroline
-                        </label>
-                            <br>
-                        <label for="Sr. Peanutbutter">
-                            <input id="sr-peanutbutter" type="checkbox"> 
-                            Sr. Peanutbutter
-                        </label>
-                            <br>
-                        <label for="Diane Nguyen">
-                            <input id="diane-nguyen" type="checkbox"> 
-                            Diane Nguyen
-                        </label>
-                            <br>
-                        <label for="Sarah Lynn">
-                            <input id="sarah-lynn" type="checkbox"> 
-                            Sarah Lynn
-                        </label>
-                            <br>
-
-            </form>
-                    
-                
-            <label id="comments-label"for="comments">
-                Any comments about the show?
+                    <select id="dropdown-1" name="current-role" class="form-control">
+                        <option value="Select an option">Select an option</option>
+                        <option value="Working">Working</option>
+                        <option value="Studing">Studing</option>
+                        <option value="Other">Other</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                Would you recommend the TV show Bojack Horseman to a Frind? 
                 <br>
-            </label>
-            <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
-            <p>
-                <input id="submit" type="button" value="Submit">
-            </p>
+                    <label for="definitly">
+                        <input id="definitly" type="radio" name="recommend">Definitly</input>
+                    </label>
+                    <label for="maybe">
+                        <input id="maybe" type="radio" name="recommend">Maybe</input>
+                    </label>
+                    <label for="not-really">
+                        <input type="radio" id="not-really" name="recommend">Not really!</input>
+                    </label>
+            </div>
+            <div class="form-group">
+                <label for="dropdown-label-2">Which character would you be on the show? </label>
+                <br>
+                        <select id="dropdown-2" name="which-character" class="form-control">
+                            <br>
+                            <option value="Select an option">Select an option</option>
+                            <option value="Bojack Horseman">Bojack Horseman</option>
+                            <option value="Todd Chavez">Todd Chavez</option>
+                            <option value="Princess Caroline">Princesa Caroline</option>
+                            <option value="Sr. Peanutbutter">Sr. Peanutbutter</option>
+                            <option value="Diane Nguyen">Diane Nguyen</option>
+                            <option value="Sarah Lynn">Sarah Lynn</option>
+                            <option value="Herb Kazzaz">Herb Kazzaz</option>
+                        </select>
+            </div>
+               
+                    <div class="form-group">
+                        Which characters do you like? (Check all that apply) 
+                        <br>
+                            <label for="Bojack">
+                                <input id="bojack" type="checkbox">
+                                Bojack
+                            </label>
+                                <br>
+                            <label for="Todd">
+                                <input id="Todd" type="checkbox">
+                                Todd
+                            </label>
+                                <br>
+                            <label for="Princess Caroline">
+                                <input id="princess-caroline" type="checkbox">
+                                Princess Caroline
+                            </label>
+                                <br>
+                            <label for="Sr. Peanutbutter">
+                                <input id="sr-peanutbutter" type="checkbox">
+                                Sr. Peanutbutter
+                            </label>
+                                <br>
+                            <label for="Diane Nguyen">
+                                <input id="diane-nguyen" type="checkbox">
+                                Diane Nguyen
+                            </label>
+                                <br>
+                            <label for="Sarah Lynn">
+                                <input id="sarah-lynn" type="checkbox">
+                                Sarah Lynn
+                            </label>
+                    </div>
+                            <br>              
+                
+            <div class="form-group">
+                <label id="comments-label"for="comments">
+                    Any comments about the show?
+                    <br>
+                </label>
+                <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <p>
+                    <input id="submit" type="button" value="Submit">
+                </p>
+            </div>
 
         </form>
-    </main>
+    </div>
     <script src="script.js"></script>
     
 </body>
