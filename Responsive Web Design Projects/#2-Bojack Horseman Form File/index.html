@@ -24,13 +24,13 @@
             <div class="form-group">
                 <label id="email-label" for="email">
                     E-mail <br>
-                    <input id="email" type="text" placeholder="Enter your e-mail" class="form-control" required>
+                    <input id="email" type="email" placeholder="Enter your e-mail" class="form-control" required>
                 </label>
             </div>
             <div class="form-group">
                 <label id="number-label"for="number">
                     Age <br>
-                    <input id="number" type="number" placeholder="Enter your age" class="form-control">
+                    <input id="number" type="number" placeholder="Enter your age" class="form-control" min="10" max="120">
                 </label>
             </div>
             <div class="form-group">
@@ -46,15 +46,15 @@
             <div class="form-group">
                 <p>Would you recommend the TV show Bojack Horseman to a Frind? </p>
                     <label for="definitly">
-                        <input id="definitly" type="radio" name="recommend" class="input-radio">Definitly, I'm crazy</input>
+                        <input value="definitly" type="radio" name="recommend" class="input-radio">Definitly, I'm crazy</input>
                         <br>
                     </label>
                     <label for="maybe">
-                        <input id="maybe" type="radio" name="recommend" class="input-radio">Maybe</input>
+                        <input value="maybe" type="radio" name="recommend" class="input-radio">Maybe</input>
                         <br>
                     </label>
                     <label for="not-really">
-                        <input type="radio" id="not-really" name="recommend" class="input-radio">Not really! There are sufficient depressed people walking the streets</input>
+                        <input value="not-really" type="radio" name="recommend" class="input-radio">Not really! There are sufficient depressed people walking the streets</input>
                         <br>
                     </label>
             </div>
@@ -76,37 +76,37 @@
                     <div class="form-group">
                         <p>Which characters do you like? (Check all that apply) </p>
                             <label for="Bojack">
-                                <input id="bojack" type="checkbox" name="prefer"
+                                <input value="bojack" type="checkbox" name="prefer"
                                 class="input-checkbox">
                                 Bojack
                             </label>
                                 <br>
                             <label for="Todd">
-                                <input id="Todd" type="checkbox" name="prefer"
+                                <input value="Todd" type="checkbox" name="prefer"
                                 class="input-checkbox">
                                 Todd
                             </label>
                                 <br>
                             <label for="Princess Caroline">
-                                <input id="princess-caroline" type="checkbox" name="prefer"
+                                <input value="princess-caroline" type="checkbox" name="prefer"
                                 class="input-checkbox">
                                 Princess Caroline
                             </label>
                                 <br>
                             <label for="Sr. Peanutbutter">
-                                <input id="sr-peanutbutter" type="checkbox" name="prefer"
+                                <input value="sr-peanutbutter" type="checkbox" name="prefer"
                                 class="input-checkbox">
                                 Sr. Peanutbutter
                             </label>
                                 <br>
                             <label for="Diane Nguyen">
-                                <input id="diane-nguyen" type="checkbox" name="prefer"
+                                <input value="diane-nguyen" type="checkbox" name="prefer"
                                 class="input-checkbox">
                                 Diane Nguyen
                             </label>
                                 <br>
                             <label for="Sarah Lynn">
-                                <input id="sarah-lynn" type="checkbox" name="prefer"
+                                <input value="sarah-lynn" type="checkbox" name="prefer"
                                 class="input-checkbox">
                                 Sarah Lynn
                             </label>
@@ -122,7 +122,7 @@
             </div>
             <div class="form-group">
                 <p>
-                    <input id="submit" type="button" value="Submit" class="submit">
+                    <input value="Submit" type="submit" id="submit"></input> 
                 </p>
             </div>
 
