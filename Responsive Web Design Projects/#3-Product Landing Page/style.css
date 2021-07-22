@@ -1,5 +1,19 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color:rgb(243, 238, 229);
+    font-family: Lato, sans-serif;
+}
+
+.logo {
+    width: 60vw;
+    height: auto;
 }
 
 #nav-bar {
@@ -10,6 +24,9 @@ body {
 
 .nav-link {
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 h2 {
