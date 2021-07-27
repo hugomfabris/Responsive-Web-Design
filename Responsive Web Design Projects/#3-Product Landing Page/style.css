@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 a {
     color: #000;
     text-decoration: none;
@@ -25,18 +26,55 @@ li {
     list-style: none;
 }
 
+h1 {
+    font-size: 25px;
+}
+
 h2 {
     margin: auto;
     text-align: center;
 }
 
+/* Header container elements */
 header {
     position:fixed;
     top: 0;
     display: flex;
     background-color: rgb(223, 186, 94);
     width: 100vw;
+    height: 100px;
 }
+
+#logo {
+    position: relative;
+    text-align: center;
+    margin: auto 400px auto 10px;
+}
+
+#nav-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    
+}
+
+nav > ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+}
+
+/* Section 'info' container elements */
 
 #info {
     display: flex;
@@ -46,7 +84,22 @@ header {
     text-align: center;
     height: 200px;
     margin-top: 100px;
+    padding-top: 80px;
 }
+
+#email {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 7px;
+}
+
+#submit {
+    width: 90px;
+    height: 21px;
+    background-color: rgb(223, 186, 94);
+}
+
+/* Div container-values elements*/
 
 #features {
     margin-top: 30px;
@@ -88,34 +141,6 @@ header {
     #features {
       margin-top: 0;
     }
-  }
-
-/* General classes */
-
-.logo {
-    position: relative;
-    text-align: center;
-    margin: 10px 150px auto 10px;
-}
-
-nav > ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* IDs */
-
-#email {
-    position: relative;
-    width: 300px;
-    height: 25px;
-    margin-bottom: 7px;
-}
-
-#submit {
-    width: 90px;
-    height: 21px;
-    background-color: rgb(223, 186, 94);
 }
 
 .company-values {
@@ -124,16 +149,13 @@ nav > ul {
     align-items: center;
 }
 
+/* Section #how-it-works elements */
+
 #how-it-works {
     align-self: center;
 }
 
-#pricing {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px 200px;
-}
+/* Section pricing elements */
 
 .product {
     display: flex;
@@ -151,7 +173,13 @@ nav > ul {
     background-color: rgb(192, 182, 182);
 }
 
+/* Footer elements */
+
 .footer > ul {
     display: flex;
     flex-direction: row;
 }
+
+
+
+
