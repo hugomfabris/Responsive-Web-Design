@@ -30,9 +30,10 @@ h1 {
     font-size: 25px;
 }
 
-h2 {
-    margin: auto;
-    text-align: center;
+@media (max-width: 1050px) {
+    h1 {
+        font-size: 15px;
+    }
 }
 
 /* Header container elements */
@@ -90,7 +91,8 @@ nav > ul {
 #email {
     width: 300px;
     height: 25px;
-    margin-bottom: 7px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
 #submit {
@@ -103,15 +105,19 @@ nav > ul {
 
 #features {
     margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 #features .icon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     height: 125px;
     width: 20vw;
-    color: rgb(145, 112, 72);
+    color: rgb(223, 186, 94);
+    
   }
   
   @media (max-width: 550px) {
@@ -123,11 +129,10 @@ nav > ul {
 #features .desc {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 125px;
+    height: 12px;
     width: 80vw;
-    padding: 50px;
-  }
+    padding: 40px;
+}
   
   @media (max-width: 550px) {
     #features .desc {
@@ -145,39 +150,91 @@ nav > ul {
 
 .company-values {
     display: flex;
-    margin: auto;
-    align-items: center;
+    
 }
 
-/* Section #how-it-works elements */
+/* Section #about-us(video) elements */
 
-#how-it-works {
+#about-us {
     align-self: center;
+    padding: 50px auto;
 }
 
 /* Section pricing elements */
+
+#pricing-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px auto;
+}
 
 .product {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: calc(100% / 3);
+    font-weight: 700;
     margin: 10px;
     border: 1px solid #000;
     border-radius: 3px;
-
-
 }
 
 .procuct-titles {
     background-color: rgb(192, 182, 182);
+    flex-grow:inherit;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.product > ol {
+    margin: 15px 0px;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+}
+
+.product > h3 {
+    padding: 15px 0px;
+
+}
+.btn {
+    border: 0px;
+    background-color: rgb(223, 186, 94);
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+}
+
+.product > button:hover {
+    background-color: orange;
+    transition: background-color 1s;
 }
 
 /* Footer elements */
 
-.footer > ul {
+footer > ul {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin: 8px 120px;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > span {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 100px;
+    font-size: 15px;
+    color: #444;
 }
 
 
