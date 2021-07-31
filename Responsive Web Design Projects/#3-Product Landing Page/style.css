@@ -27,7 +27,7 @@ li {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 21px;
 }
 
 @media (max-width: 1050px) {
@@ -39,11 +39,10 @@ h1 {
 /* Header container elements */
 header {
     position:fixed;
-    top: 0;
     display: flex;
     background-color: rgb(223, 186, 94);
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    height: 95px;
 }
 
 #logo {
@@ -58,21 +57,46 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 200px;
-    
 }
 
 nav > ul {
     position: relative;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .nav-link {
     display: flex;
     flex-direction: column;
     margin: 50px 100px;
+}
+
+@media (max-width: 950px) {
+    #header {
+        width: 100%;
+    }
+    #header > #logo > h1 {
+        margin: 15px;
+    }
+    #nav-bar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #logo {
+        position: relative;
+        display: flex;
+        text-align: center;
+        margin: 10px 30px;
+        padding-right: 50px;
+    }
+    .nav-link {
+        margin: 10px 20px;
+    }
+}
+@media (max-width: 450px) {
+    
 }
 
 /* Section 'info' container elements */
