@@ -1,0 +1,14 @@
+#navbar {
+    position: fixed;
+    justify-content: flex-end;
+    background-color: aqua;
+}
+
+ul {
+    display: flex;
+}
+
+#welcome-section {
+    position: relative;
+    margin: 30px, auto
+}
