@@ -3,52 +3,75 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; /* 18px */
+    font-weight: 200;
+    line-height: 1.3;
+    color: white;
+      
 }
+
+
 
 #navbar {
     position:fixed;
     display: flex;
-    background-color: rgb(223, 186, 94);
+    justify-content: flex-end;
+    background-image: linear-gradient(35deg, rgb(176, 227, 243), blue);
     width: 100%;
-    height: 70px;
+    height: 90px;
     top: 0px;
     left: 0px;
-    justify-content: flex-end;
-    align-items: center;
-
-    /*
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 70px;
-    background-color: brown;
-    */
+    z-index: 2;
 }
 
 #navlist {
     display: flex;
-    align-items: space-evenly;
-    text-decoration: none;
-    margin-right: 100px;
+    align-items: center;
+    margin-right: 2rem;
 }
 
-a {
-    color: #000;
+.links {
+
+    font-size: 2rem;
+    padding: 2rem;
     text-decoration: none;
+    color: white;
 }
+
 
 ul {
     list-style: none;
-  }
+}
 
-#welcome-section {
+/* Welcome section */
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    margin-top: 80px;
+    margin: 0px 0px;
+    background-image: linear-gradient(45deg, darkblue, rgb(5, 7, 32));
+}
+
+/* Section projects */
+
+#projects {
     text-align: center;
+}
+
+#projects-header {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
 }
